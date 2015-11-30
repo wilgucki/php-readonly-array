@@ -1,6 +1,6 @@
 {
-  "name": "wilgucki/readonly-php-array",
-  "description": "Readonly PHP array",
+  "name": "wilgucki/PHP-ReadonlyArray",
+  "description": "PHP Readonly array",
   "license": "MIT",
   "authors": [
     {
