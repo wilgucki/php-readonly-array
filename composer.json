@@ -1,0 +1,20 @@
+{
+  "name": "wilgucki/readonly-php-array",
+  "description": "Readonly PHP array",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maciej Wilgucki",
+      "email": "mwilgucki@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "phpunit/phpunit": "^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Wilgucki\\": "src/"
+    }
+  }
+}
