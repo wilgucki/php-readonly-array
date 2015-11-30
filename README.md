@@ -19,7 +19,7 @@ var_dump(isset($readonlyArray['b'])); // true
 var_dump(isset($readonlyArray['c'])); // false
 ```
 
-If you try to get value from non-existent offet, OutOfRangeException will be thrown.
+If you try to get value from non-existent offset, OutOfRangeException will be thrown.
 
 You cannot set value to an existing key nor you cannot unset defined value. If you try to do so, an LogicException will be thrown.
 
