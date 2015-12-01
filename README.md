@@ -1,5 +1,17 @@
 #PHP Readonly Array
 
+##Instalation
+
+You have two options. Download <code>ReadonlyArray</code> class and include it in your project or use composer.
+
+<code>composer require wilgucki/php-readonly-array</code>
+
+If you use composer, don't forget to include autoloader in your project.
+
+```php
+require 'vendor/autoload.php';
+```
+
 ##Usage
 
 Create new ReadonlyArray object and pass array to its constructor.
@@ -29,3 +41,27 @@ unset($readonlyArray['c']); // LogicException
 ```
 
 ReadonlyArray is marked as final class, so you can't extend it.
+
+You can iterate through ReadonlyArray using foreach loop.
+
+```php
+$readonlyArray = new ReadonlyArray([
+    'a' => 1,
+    'b' => 2
+]);
+
+foreach ($readonlyArray as $k => $v) {
+    echo $k.' '.$v;
+}
+```
+
+If you need to count elements of ReadonlyArray, use <code>count</count> function.
+
+```php
+$readonlyArray = new ReadonlyArray([
+    'a' => 1,
+    'b' => 2
+]);
+
+count($readonlyArray);
+```
