@@ -10,6 +10,12 @@ class ReadonlyArrayTest extends PHPUnit_Framework_TestCase
         $this->assertTrue(isset($readonlyArray['a']));
     }
 
+    public function testNullValue()
+    {
+        $readonlyArray = new ReadonlyArray(['a' => null]);
+        $this->assertTrue(isset($readonlyArray['a']));
+    }
+
     public function testOffsetDoesNotExists()
     {
         $readonlyArray = new ReadonlyArray(['a' => 1]);
